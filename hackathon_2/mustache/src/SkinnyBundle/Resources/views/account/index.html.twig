@@ -1,0 +1,73 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h3 class="text-center">parametres du compte</h3>
+
+    <div class="container">
+
+        <div class="row box_param">
+
+            <div class="col-xs-6">
+
+                <img src="{{ asset('bundles/skinny/img/avatar1.jpg') }}" class="cadre_avatar">
+
+            </div>
+            <div class="col-xs-6">
+                <div class="col-xs-12"><p>Télécharger un nouvel avatar</p></div>
+                <div class="col-xs-12"><input type="button" value="Télécharger"></div>
+                <div class="col-xs-12"><input type="text" placeholder="Nom du fichier"></div>
+            </div>
+
+
+        </div>
+        <br>
+
+        <div class="row box_param">
+
+            <div class="col-xs-12">
+                <div class="col-xs-4">Nom</div>
+                <div class="col-xs-6"><input type="text" placeholder="Skinny"></div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="col-xs-4">Contact</div>
+                <div class="col-xs-6"><input type="email" placeholder="contact@moustaches.fr"></div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="col-xs-4">Mot de passe</div>
+                <div class="col-xs-6"><input type="password" placeholder="moustaches"></div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="col-xs-4">Photos postées</div>
+                <div class="col-xs-6"><input type="button" value="35"></div>
+            </div>
+
+            <div class="col-xs-12">
+                <div class="col-xs-4">Abonnés</div>
+                <div class="col-xs-6"><input type="button" value="134"></div>
+            </div>
+
+        </div>
+
+        <div class="row box_param">
+
+            <div class="col-xs-12">
+
+                <button>S'inscrire à la newsletter</button>
+            </div>
+
+        </div>
+    </div>
+
+
+{% endblock %}

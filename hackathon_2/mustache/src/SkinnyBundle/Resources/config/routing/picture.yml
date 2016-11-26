@@ -1,0 +1,24 @@
+picture_index:
+    path:     /
+    defaults: { _controller: "SkinnyBundle:Picture:index" }
+    methods:  GET
+
+picture_show:
+    path:     /{id}/show
+    defaults: { _controller: "SkinnyBundle:Picture:show" }
+    methods:  GET
+
+picture_new:
+    path:     /new
+    defaults: { _controller: "SkinnyBundle:Picture:new" }
+    methods:  [GET, POST]
+
+picture_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SkinnyBundle:Picture:edit" }
+    methods:  [GET, POST]
+
+picture_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SkinnyBundle:Picture:delete" }
+    methods:  DELETE

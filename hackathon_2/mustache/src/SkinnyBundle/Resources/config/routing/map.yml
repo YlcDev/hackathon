@@ -1,0 +1,24 @@
+map_index:
+    path:     /
+    defaults: { _controller: "SkinnyBundle:Map:index" }
+    methods:  GET
+
+map_show:
+    path:     /{id}/show
+    defaults: { _controller: "SkinnyBundle:Map:show" }
+    methods:  GET
+
+map_new:
+    path:     /new
+    defaults: { _controller: "SkinnyBundle:Map:new" }
+    methods:  [GET, POST]
+
+map_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SkinnyBundle:Map:edit" }
+    methods:  [GET, POST]
+
+map_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SkinnyBundle:Map:delete" }
+    methods:  DELETE

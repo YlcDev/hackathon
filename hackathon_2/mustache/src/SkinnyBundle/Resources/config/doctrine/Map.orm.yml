@@ -1,0 +1,11 @@
+SkinnyBundle\Entity\Map:
+    type: entity
+    table: null
+    repositoryClass: SkinnyBundle\Repository\MapRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }

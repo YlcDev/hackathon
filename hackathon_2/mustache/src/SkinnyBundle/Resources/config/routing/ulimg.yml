@@ -1,0 +1,24 @@
+ulimg_index:
+    path:     /
+    defaults: { _controller: "SkinnyBundle:UlImg:index" }
+    methods:  GET
+
+ulimg_show:
+    path:     /{id}/show
+    defaults: { _controller: "SkinnyBundle:UlImg:show" }
+    methods:  GET
+
+ulimg_new:
+    path:     /new
+    defaults: { _controller: "SkinnyBundle:UlImg:new" }
+    methods:  [GET, POST]
+
+ulimg_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "SkinnyBundle:UlImg:edit" }
+    methods:  [GET, POST]
+
+ulimg_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "SkinnyBundle:UlImg:delete" }
+    methods:  DELETE

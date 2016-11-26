@@ -1,0 +1,103 @@
+{% extends "::base.html.twig" %}
+
+{% block body %}
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1 class="text-center">Top 3 Mustaches !</h1>
+    <br/>
+    <br/>
+    <br/>
+    <div class="container">
+        <select>
+            <option>Tri par note</option>
+            <option>Tri par posteur</option>
+
+        </select>
+        <div class="row">
+
+            <div class="col-xs-12 bloc_accueil">
+                <h2 class="text-center">la XXL</h2>
+                <div class="col-xs-12 thumbnail">
+                    <img src="{{ asset('bundles/skinny/img/pic1.jpg') }}">
+                </div>
+                <hr/>
+                <div class="col-xs-6">
+                    <img src="{{ asset('bundles/skinny/img/2star.png') }}" class="star">
+                </div>
+                <div class="col-xs-6">
+                    <div class="col-xs-12">
+                    <p>Kikou-Stache</p>
+                    </div>
+                    <div class="col-xs-12">
+                    <img src="{{ asset('bundles/skinny/img/stache.png') }}"class="star">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 bloc_accueil">
+                <h2 class="text-center">la classqiue</h2>
+                <div class="col-xs-12 thumbnail">
+                    <img src="{{ asset('bundles/skinny/img/pic2.jpg') }}">
+                </div>
+                <hr/>
+                <div class="col-xs-6">
+                    <img src="{{ asset('bundles/skinny/img/4star.png') }}" class="star">
+                </div>
+                <div class="col-xs-6">
+                    <div class="col-xs-12">
+
+                    <p>Walt</p>
+                        </div>
+                        <div class="col-xs-12">
+                    <img src="{{ asset('bundles/skinny/img/stache.png') }}" class="star">
+                            </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-xs-12 bloc_accueil">
+                <h2 class="text-center">la "Inception"</h2>
+                <div class="col-xs-12 thumbnail">
+                    <img src="{{ asset('bundles/skinny/img/pic3.jpg') }}">
+                </div>
+                <hr/>
+                <div class="col-xs-6">
+                    <img src="{{ asset('bundles/skinny/img/5star.png') }}" class="star">
+                </div>
+                <div class="col-xs-6">
+                    <div class="col-xs-12">
+
+                    <p>Roxxor-Stache</p>
+                        </div>
+                        <div class="col-xs-12">
+
+                        <img src="{{ asset('bundles/skinny/img/stache.png') }}" class="star">
+                            </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+{% endblock %}
+

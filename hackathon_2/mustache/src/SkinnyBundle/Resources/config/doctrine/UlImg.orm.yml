@@ -1,0 +1,18 @@
+SkinnyBundle\Entity\UlImg:
+    type: entity
+    table: null
+    repositoryClass: SkinnyBundle\Repository\UlImgRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        file:
+            type: string
+            length: 255
+        name:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

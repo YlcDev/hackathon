@@ -1,0 +1,36 @@
+SkinnyBundle\Entity\Account:
+    type: entity
+    table: null
+    repositoryClass: SkinnyBundle\Repository\AccountRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+        login:
+            type: string
+            length: 255
+        pass:
+            type: string
+            length: 255
+        email:
+            type: string
+            length: 255
+        avatar:
+            type: string
+            length: 255
+        picture:
+            type: string
+            length: 255
+        zipcode:
+            type: string
+            length: 255
+        city:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

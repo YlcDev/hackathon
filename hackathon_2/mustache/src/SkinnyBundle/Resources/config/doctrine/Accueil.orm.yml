@@ -1,0 +1,23 @@
+SkinnyBundle\Entity\Accueil:
+    type: entity
+    table: null
+    repositoryClass: SkinnyBundle\Repository\AccueilRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        picture:
+            type: string
+            length: 255
+        note:
+            type: string
+            length: 255
+            column: Note
+        posteur:
+            type: string
+            length: 255
+            column: Posteur
+    lifecycleCallbacks: {  }

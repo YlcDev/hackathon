@@ -1,0 +1,41 @@
+SkinnyBundle\Entity\Picture:
+    type: entity
+    table: null
+    repositoryClass: SkinnyBundle\Repository\PictureRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        avatar:
+            type: string
+            length: 255
+            nullable: TRUE
+        image1:
+            type: string
+            length: 255
+            nullable: TRUE
+        image2:
+            type: string
+            length: 255
+            nullable: TRUE
+        image3:
+            type: string
+            length: 255
+            nullable: TRUE
+        image4:
+            type: string
+            length: 255
+            nullable: TRUE
+        image5:
+            type: string
+            length: 255
+            nullable: TRUE
+    lifecycleCallbacks:
+      prePersist: [ preUpload, preUpload2, preUpload3,preUpload4, preUpload5 ]
+      preUpdate: [ preUpload, preUpload2, preUpload3,preUpload4, preUpload5 ]
+      postPersist: [ upload, upload2, upload3, upload4, upload5 ]
+      postUpdate: [ upload, upload2, upload3, upload4, upload5 ]
+      postRemove: [ removeUpload, removeUpload2, removeUpload3, removeUpload4, removeUpload5 ]

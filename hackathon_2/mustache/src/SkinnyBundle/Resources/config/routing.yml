@@ -1,0 +1,25 @@
+skinny_accueil:
+    resource: "@SkinnyBundle/Resources/config/routing/accueil.yml"
+    prefix:   /accueil
+
+skinny_homepage:
+    path:     /
+    defaults: { _controller: SkinnyBundle:Default:index }
+
+skinny_account:
+    resource: "@SkinnyBundle/Resources/config/routing/account.yml"
+    prefix:   /account
+
+skinny_ulimg:
+    resource: "@SkinnyBundle/Resources/config/routing/ulimg.yml"
+    prefix:   /ulimg
+
+skinny_map:
+    resource: "@SkinnyBundle/Resources/config/routing/map.yml"
+    prefix:   /map
+
+skinny_picture:
+    resource: "@SkinnyBundle/Resources/config/routing/picture.yml"
+    prefix:   /picture
+
+

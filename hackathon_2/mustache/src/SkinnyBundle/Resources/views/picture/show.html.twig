@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Picture</h1>
+
+    <table>
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ picture.id }}</td>
+            </tr>
+            <tr>
+                <th>Avatar</th>
+                <td>{{ picture.avatar }}</td>
+            </tr>
+            <tr>
+                <th>Image1</th>
+                <td>{{ picture.image1 }}</td>
+            </tr>
+            <tr>
+                <th>Image2</th>
+                <td>{{ picture.image2 }}</td>
+            </tr>
+            <tr>
+                <th>Image3</th>
+                <td>{{ picture.image3 }}</td>
+            </tr>
+            <tr>
+                <th>Image4</th>
+                <td>{{ picture.image4 }}</td>
+            </tr>
+            <tr>
+                <th>Image5</th>
+                <td>{{ picture.image5 }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('picture_index') }}">Back to the list</a>
+        </li>
+        <li>
+            <a href="{{ path('picture_edit', { 'id': picture.id }) }}">Edit</a>
+        </li>
+        <li>
+            {{ form_start(delete_form) }}
+                <input type="submit" value="Delete">
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}

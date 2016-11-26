@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Movember{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/skinny/css/style.css') }}">
+            <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        {% endblock %}
+    </head>
+    <body>
+        {% block body %}{% endblock %}
+
+
+    <!--DEBUT LOGO-->
+        <div class="row">
+                 <div class="logo">
+                     <img src="{{ asset('bundles/skinny/img/Logo.png') }}" alt="Logo Movember" class="logoimg col-xs-offset-4 col-xs-4" >
+                 </div>
+        </div>
+    <!--FIN LOGO-->
+
+
+
+
+    <!--DEBUT NAVBAR-->
+        <div class="row">
+            <div class="col-xs-12">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <!--<div class="container">-->
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="{{ path('accueil_index') }}">Accueil <span class="sr-only">(current)</span></a></li>
+                            <li><a href="{{ path('map_index') }}">Carte des moustaches</a></li>
+                            <li><a href="{{ path('ulimg_index') }}">Ajouter une moustache</a></li>
+                            <li><a href="{{ path('account_index') }}">Paramètre</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    <!--FIN NAVBAR-->
+
+
+
+    <!--DEBUT FOOTER-->
+
+    <footer>
+        <p>
+            <a data-toggle="modal" data-target="#mentionsLeg" class="ml">Mentions Légales</a>
+        </p>
+        <div id="mentionsLeg" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Mentions Légales</h4>
+                    </div>
+                    <div class="modal-body1">
+                        <p>Propriétaire du site : MOVEMBER</p>
+                        <p class="mentLeg">Droits d'auteur-Copyright-Marques<br/>
+                           Le contenu et la présentation du site constituent une œuvre de l'esprit et bénéficient de la protection accordée par la législation française et internationale en vigueur sur la propriété intellectuelle et industrielle. L'exploitation, la reproduction, l'extraction de tout ou partie des données, fichiers, représentations graphiques, photographiques, numériques ou audiovisuelles ou de tout élément figurant sur le site ou encore de tout ou partie du site lui-même sont formellement interdites sans l'accord écrit et préalable du FSPP. Les marques éventuellement citées sur le site sont la propriété de leurs titulaires respectifs. Collecte des données personnelles Les informations recueillies sur le formulaire de contact sont nécessaires pour traiter votre demande d'informations ou pour votre adhésion. Elles font l’objet d’un traitement informatique et sont destinées au secrétariat de l’association. En application des articles 39 et suivants de la loi du 6 janvier 1978 modifiée, vous bénéficiez d’un droit d’accès et de rectification aux informations qui vous concernent. Si vous souhaitez exercer ce droit et obtenir communication des informations vous concernant, veuillez vous adresser au FSPP. Décharge de responsabilité : le contenu de ce site web est amené à évoluer régulièrement. Nous déclinons toute responsabilité concernant l'exactitude, l'exhaustivité et la qualité des informations offertes. Nous déclinons toute responsabilité pour d'éventuels dommages, directs ou indirects émanant de l'utilisation des informations contenues sur le site, dans la mesure où ils ne seront pas provoqués avec préméditation ou par négligence. Ce site propose des liens vers d'autres sites web. Aucun contenu illicite n'a été identifié sur les sites liés lors de la mise en ligne des liens hypertextes. N'ayant aucun moyen d'intervention sur ces sites, nous déclinons toute responsabilité concernant leur contenu. Chaque propriétaire de site est responsable du contenu de son propre site. Les clauses d'exclusion de responsabilité font partie intégrante du présent site web. Le site et l'ensemble de son contenu sont soumis au droit français et tout litige éventuel s'y rapportant sera soumis à la compétence des tribunaux français.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <!--FIN FOOTER-->
+
+        {% block javascripts %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script src="https://use.fontawesome.com/fafce886a9.js"></script>
+        {% endblock %}
+
+
+
+    </body>
+
+</html>
